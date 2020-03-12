@@ -26,7 +26,7 @@ updater = Updater(TOKEN, use_context=True)
 dp = updater.dispatcher
 base_url = 'https://{}.herokuapp.com/'.format(NAME)
 query_test = base_url + "query_test/"
-query_app_name = "telequery"
+query_app_name = "mstelequery"
 
 def start(update, context):
     update.effective_message.reply_text("What is your name?")
