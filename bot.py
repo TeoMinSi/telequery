@@ -34,7 +34,7 @@ def start(update, context):
 
 def reply(update, context):
 	print(update.effective_message.text)
-	payload = {"name":update.effective_message.text}
+	payload = {"name":update.effective_message.text, "timestamp":time.timenow()}
 	r = requests.get(query_test, json=payload)
 	print(r.status_code)
 	print(r.text)
