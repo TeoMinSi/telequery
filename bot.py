@@ -29,7 +29,7 @@ query_test = base_url + "query_test/"
 query_app_name = "mstelequery"
 
 def start(update, context):
-    update.effective_message.reply_text("What is your name?")
+    update.effective_message.reply_text("Where is the location you would like to query?")
 
 
 def reply(update, context):
